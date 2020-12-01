@@ -34,12 +34,12 @@ class ViewController: UIViewController {
         motherButton.setTitle(family[1].status, for: .normal)
         sonButton.setTitle(family[2].status, for: .normal)
         
-        sonStack.isHidden = true
     }
 
-    @IBAction func pushOnHurt() {
-        sonStack.isHidden = false
+    @IBAction func loveButtonPressed(_ sender: Any) {
+        sonStack.isHidden = !sonStack.isHidden
     }
+    
     
 }
 
